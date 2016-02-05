@@ -18,9 +18,16 @@
         src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//www.listbox.com/css/lb-subs.css">
+    <link rel="stylesheet" href="cpan-weekly.css">
 </head>
+<body>
     <div class="jumbotron">
       <div class="container">
+
+
+
+
         <h1>CPAN Weekly</h1>
         <p>
             CPAN Weekly is a mailing list for Perl 5 programmers.
@@ -41,11 +48,26 @@
             </div>
             <div class="col-md-4">
                 <h2>Sign up</h2>
-                <p>
-                    All you need to do is send a blank email to
-                    <a href="mailto:newsletter-subscribe@cpan-weekly.org">newsletter-subscribe@cpan-weekly.org</a>.
-                </p>
-                <p><a class="btn btn-default" href="mailto:newsletter-subscribe@cpan-weekly.org" role="button">Sign me up!</a></p>
+
+<div class="lbSubsBubble">
+<form id="listbox_subscribe" method="post" action="http://www.listbox.com/subscribe/" >
+    <a name='#listbox-sub-error'></a>
+    <a name='#listbox-sub-okay'></a>
+    <div id='insertHere'></div>
+    <div class="lbField">
+        <input class="form-control" id="username" placeholder="Your email address" name="username" type="text" />
+    </div>
+    <input id="action" name="action" type="hidden" value="subscribe" />
+    <input name="list_id" type="hidden" value="273542" />
+    <input name="redirect" type="hidden" value="listbox" />
+    <input class="lbBtn" type="submit" value="Subscribe" />
+</form>
+</div>
+
+<p>
+Or you can just send a blank email to
+<a href="mailto:newsletter-subscribe@cpan-weekly.org">newsletter-subscribe@cpan-weekly.org</a>.
+</p>
             </div>
             <div class="col-md-4">
                 <h2>You can help!</h2>
@@ -57,7 +79,9 @@
             </div>
       </div>
 
+    <footer class="footer">
+    <p>The CPAN Weekly mailing list is provided by <a href="https://listbox.com">listbox</a></p>
+    </footer>
 
-<body>
 </body>
 </html>
